@@ -25,6 +25,7 @@ router.get("/", async (req, res) => {
     if (pageNo < 1 || pageSize < 1) {
       res.status(400).send("Invalid pageNo or pageSize");
     } else {
+      console.log(error)
       res.status(500).send("Internal Server Error");
     }
     return;
